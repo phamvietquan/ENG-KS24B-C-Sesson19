@@ -9,10 +9,10 @@ typedef struct {
     char phoneNumber[15];
 } SinhVien;
 
-void hienThiDanhSach(SinhVien sv[], int n) {
+void hienThiDanhSach(SinhVien arr[], int n) {
     printf("\nDanh sach sinh vien:\n");
     for (int i = 0; i < n; i++) {
-        printf(" %d, %s, %d, %s\n", sv[i].id, sv[i].name, sv[i].age, sv[i].phoneNumber);
+        printf("%d, %s, %d, %s\n", arr[i].id, arr[i].name, arr[i].age, arr[i].phoneNumber);
     }
 }
 void themSinhVien(SinhVien arr[], int *n) {
@@ -154,4 +154,3 @@ int main() {
 
     return 0;
 }
-
